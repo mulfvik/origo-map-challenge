@@ -1,0 +1,16 @@
+{
+  "type": "FeatureCollection",
+  "name": "Varda",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Varda"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [11.9278981, 58.3494466, 0.0]
+      }
+    }
+  ]
+}

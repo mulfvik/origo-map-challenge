@@ -1,0 +1,16 @@
+{
+  "type": "FeatureCollection",
+  "name": "Eros",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Eros"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.0455497, 59.3937924, 0.0]
+      }
+    }
+  ]
+}

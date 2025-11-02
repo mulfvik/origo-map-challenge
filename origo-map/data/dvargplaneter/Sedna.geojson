@@ -1,0 +1,16 @@
+{
+  "type": "FeatureCollection",
+  "name": "Sedna",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Sedna"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [22.1347816, 65.6169881, 0.0]
+      }
+    }
+  ]
+}

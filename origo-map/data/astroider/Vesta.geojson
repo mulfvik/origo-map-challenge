@@ -1,0 +1,16 @@
+{
+  "type": "FeatureCollection",
+  "name": "Vesta",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Vesta"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.0637187, 59.4401263, 0.0]
+      }
+    }
+  ]
+}

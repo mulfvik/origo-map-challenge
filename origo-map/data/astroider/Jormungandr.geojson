@@ -1,0 +1,16 @@
+{
+  "type": "FeatureCollection",
+  "name": "Jormungandr",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Jormungandr"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.0726991, 59.309613, 0.0]
+      }
+    }
+  ]
+}

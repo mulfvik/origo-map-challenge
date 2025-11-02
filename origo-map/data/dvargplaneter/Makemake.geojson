@@ -1,0 +1,16 @@
+{
+  "type": "FeatureCollection",
+  "name": "Makemake",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Makemake"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [11.9474112, 57.685682, 0.0]
+      }
+    }
+  ]
+}

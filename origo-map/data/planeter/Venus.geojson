@@ -1,0 +1,16 @@
+{
+  "type": "FeatureCollection",
+  "name": "Venus",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Venus"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.0584375, 59.3526875, 0.0]
+      }
+    }
+  ]
+}

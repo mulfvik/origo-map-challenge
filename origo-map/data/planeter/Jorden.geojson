@@ -1,0 +1,16 @@
+{
+  "type": "FeatureCollection",
+  "name": "Jorden",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Jorden"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.0539375, 59.3689375, 0.0]
+      }
+    }
+  ]
+}

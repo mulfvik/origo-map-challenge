@@ -1,0 +1,16 @@
+{
+  "type": "FeatureCollection",
+  "name": "Saturnus (titan)",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Saturnus (titan)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.6376284, 59.8596591, 0.0]
+      }
+    }
+  ]
+}

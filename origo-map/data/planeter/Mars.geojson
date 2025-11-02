@@ -1,0 +1,16 @@
+{
+  "type": "FeatureCollection",
+  "name": "Mars",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Mars"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.0365625, 59.3984375, 0.0]
+      }
+    }
+  ]
+}

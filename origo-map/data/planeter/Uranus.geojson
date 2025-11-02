@@ -1,0 +1,16 @@
+{
+  "type": "FeatureCollection",
+  "name": "Uranus",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Uranus"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.8798983, 60.4069978, 0.0]
+      }
+    }
+  ]
+}

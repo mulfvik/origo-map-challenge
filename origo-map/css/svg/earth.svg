@@ -1,0 +1,14 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <radialGradient id="earthGradient">
+                        <stop offset="0%" style="stop-color:#6BA3D4" />
+                        <stop offset="70%" style="stop-color:#2874A6" />
+                        <stop offset="100%" style="stop-color:#1B4F72" />
+                    </radialGradient>
+                </defs>
+                <circle cx="100" cy="100" r="48" fill="url(#earthGradient)"/>
+                <path d="M 75 85 Q 85 70 105 75 Q 120 78 125 85 Q 128 100 110 115 Q 85 120 70 110 Q 65 95 75 85 Z" fill="#4CAF50" opacity="0.8"/>
+                <circle cx="80" cy="90" r="2" fill="white" opacity="0.6"/>
+                <circle cx="115" cy="95" r="3" fill="white" opacity="0.6"/>
+                <circle cx="95" cy="110" r="2" fill="white" opacity="0.5"/>
+            </svg>

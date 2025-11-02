@@ -1,0 +1,16 @@
+{
+  "type": "FeatureCollection",
+  "name": "Quaoar",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Quaoar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [13.5304069, 57.2959901, 0.0]
+      }
+    }
+  ]
+}

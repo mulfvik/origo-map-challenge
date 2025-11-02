@@ -1,0 +1,16 @@
+{
+  "type": "FeatureCollection",
+  "name": "Jupiter",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Jupiter"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.9310431, 59.6489812, 0.0]
+      }
+    }
+  ]
+}

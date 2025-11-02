@@ -1,0 +1,15 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <radialGradient id="mercuryGradient">
+                        <stop offset="0%" style="stop-color:#D4A574" />
+                        <stop offset="50%" style="stop-color:#B8936E" />
+                        <stop offset="100%" style="stop-color:#8B7355" />
+                    </radialGradient>
+                </defs>
+                <circle cx="100" cy="100" r="45" fill="url(#mercuryGradient)"/>
+                <circle cx="85" cy="90" r="6" fill="#6B5A47" opacity="0.4"/>
+                <circle cx="115" cy="85" r="5" fill="#6B5A47" opacity="0.4"/>
+                <circle cx="95" cy="110" r="7" fill="#6B5A47" opacity="0.3"/>
+                <circle cx="120" cy="105" r="4" fill="#6B5A47" opacity="0.4"/>
+                <circle cx="75" cy="105" r="5" fill="#6B5A47" opacity="0.3"/>
+            </svg>

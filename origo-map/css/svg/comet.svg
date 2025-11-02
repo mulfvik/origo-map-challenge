@@ -1,0 +1,54 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <radialGradient id="cometCore">
+                        <stop offset="0%" style="stop-color:#E8F4F8" />
+                        <stop offset="40%" style="stop-color:#B8D4E8" />
+                        <stop offset="100%" style="stop-color:#8AB4D4" />
+                    </radialGradient>
+                    <radialGradient id="cometGlow">
+                        <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:0.9" />
+                        <stop offset="50%" style="stop-color:#A8D8EA;stop-opacity:0.5" />
+                        <stop offset="100%" style="stop-color:#6BA3D4;stop-opacity:0" />
+                    </radialGradient>
+                    <linearGradient id="tail1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#D4E8F0;stop-opacity:0.8" />
+                        <stop offset="50%" style="stop-color:#A8C8E0;stop-opacity:0.4" />
+                        <stop offset="100%" style="stop-color:#7AA8C8;stop-opacity:0" />
+                    </linearGradient>
+                    <linearGradient id="tail2" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#E0F0F8;stop-opacity:0.7" />
+                        <stop offset="60%" style="stop-color:#B8D8E8;stop-opacity:0.3" />
+                        <stop offset="100%" style="stop-color:#8AB8D4;stop-opacity:0" />
+                    </linearGradient>
+                </defs>
+                
+                <!-- Tail streams -->
+                <path d="M 85 75 Q 120 110 160 150 Q 170 165 185 185" 
+                      stroke="url(#tail1)" stroke-width="25" fill="none" opacity="0.6" stroke-linecap="round"/>
+                <path d="M 80 70 Q 110 100 145 140 Q 155 155 175 180" 
+                      stroke="url(#tail2)" stroke-width="18" fill="none" opacity="0.5" stroke-linecap="round"/>
+                <path d="M 82 72 Q 130 115 170 160 Q 180 175 190 190" 
+                      stroke="url(#tail1)" stroke-width="15" fill="none" opacity="0.4" stroke-linecap="round"/>
+                
+                <!-- Dust particles in tail -->
+                <circle cx="110" cy="95" r="2" fill="#C8E0F0" opacity="0.5"/>
+                <circle cx="125" cy="110" r="1.5" fill="#D8E8F4" opacity="0.6"/>
+                <circle cx="140" cy="125" r="2.5" fill="#B8D4E8" opacity="0.4"/>
+                <circle cx="155" cy="140" r="1.8" fill="#C8E0F0" opacity="0.5"/>
+                <circle cx="165" cy="155" r="2" fill="#D8E8F4" opacity="0.4"/>
+                <circle cx="175" cy="170" r="1.5" fill="#B8D4E8" opacity="0.3"/>
+                
+                <!-- Coma (atmosphere around nucleus) -->
+                <circle cx="70" cy="60" r="25" fill="url(#cometGlow)"/>
+                
+                <!-- Nucleus (core) -->
+                <ellipse cx="70" cy="60" rx="12" ry="10" fill="url(#cometCore)"/>
+                
+                <!-- Surface details on nucleus -->
+                <ellipse cx="68" cy="58" rx="3" ry="2.5" fill="#7AA0B8" opacity="0.4"/>
+                <ellipse cx="74" cy="61" rx="2.5" ry="2" fill="#7AA0B8" opacity="0.3"/>
+                <ellipse cx="69" cy="63" rx="2" ry="1.5" fill="#7AA0B8" opacity="0.35"/>
+                
+                <!-- Bright highlights -->
+                <ellipse cx="67" cy="57" rx="3" ry="2" fill="#FFFFFF" opacity="0.6"/>
+            </svg>

@@ -1,0 +1,16 @@
+{
+  "type": "FeatureCollection",
+  "name": "Halleys komet",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Halleys komet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [13.8519277, 58.3876432, 0.0]
+      }
+    }
+  ]
+}

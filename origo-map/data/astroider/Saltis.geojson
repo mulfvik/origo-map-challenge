@@ -1,0 +1,16 @@
+{
+  "type": "FeatureCollection",
+  "name": "Saltis",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Saltis"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.304966, 59.2723633, 0.0]
+      }
+    }
+  ]
+}

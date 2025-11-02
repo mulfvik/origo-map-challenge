@@ -1,0 +1,16 @@
+{
+  "type": "FeatureCollection",
+  "name": "Eris",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Eris"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [20.2775591, 63.8207461, 0.0]
+      }
+    }
+  ]
+}

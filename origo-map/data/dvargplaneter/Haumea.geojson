@@ -1,0 +1,16 @@
+{
+  "type": "FeatureCollection",
+  "name": "Haumea",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Haumea"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.4307255, 60.4880207, 0.0]
+      }
+    }
+  ]
+}

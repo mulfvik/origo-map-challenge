@@ -1,0 +1,16 @@
+{
+  "type": "FeatureCollection",
+  "name": "Ixion",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Ixion"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.9366872, 62.6305366, 0.0]
+      }
+    }
+  ]
+}

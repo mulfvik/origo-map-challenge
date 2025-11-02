@@ -1,0 +1,16 @@
+{
+  "type": "FeatureCollection",
+  "name": "Pluto",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Pluto"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.5533824, 61.7991324, 0.0]
+      }
+    }
+  ]
+}

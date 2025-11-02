@@ -1,0 +1,16 @@
+{
+  "type": "FeatureCollection",
+  "name": "Gonggong",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Gonggong"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [13.0843561, 55.5427493, 0.0]
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "type": "FeatureCollection",
+  "name": "Merkurius",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Merkurius"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.0709375, 59.3196875, 0.0]
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "type": "FeatureCollection",
+  "name": "Oumuamua",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Oumuamua"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [12.7451792, 56.7347117, 0.0]
+      }
+    }
+  ]
+}

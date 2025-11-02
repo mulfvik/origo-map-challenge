@@ -1,0 +1,16 @@
+{
+  "type": "FeatureCollection",
+  "name": "Solen",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Solen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.0835625, 59.2935625, 0.0]
+      }
+    }
+  ]
+}

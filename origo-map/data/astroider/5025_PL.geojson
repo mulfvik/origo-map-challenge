@@ -1,0 +1,16 @@
+{
+  "type": "FeatureCollection",
+  "name": "5025 PL",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "5025 PL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.8011101, 59.7195239, 0.0]
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "type": "FeatureCollection",
+  "name": "Neptunus",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Neptunus"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.0628209, 61.3055762, 0.0]
+      }
+    }
+  ]
+}

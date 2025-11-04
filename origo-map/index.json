@@ -75,10 +75,10 @@
     20037508.34
   ],
   "center": [
-    2013061,
-    8244004
+    1363096,
+    7444511
   ],
-  "zoom": 8,
+  "zoom": 6,
   "resolutions": [
     156543.03390625,
     78271.516953125,
@@ -166,7 +166,7 @@
         {
           "name": "day2",
           "title": "<strong>Day 2 - Lines</strong>",
-          "expanded": true,
+          "expanded": false,
           "groups": [
             {
               "name": "vattendrag",
@@ -178,11 +178,23 @@
         {
           "name": "day3",
           "title": "<strong>Day 3 - Polygons</strong>",
-          "expanded": true,
+          "expanded": false,
           "groups": [
             {
               "name": "sjoar",
               "title": "Lakes",
+              "expanded": true
+            }
+          ]
+        },
+        {
+          "name": "day4",
+          "title": "<strong>Day 4 - My Data</strong>",
+          "expanded": true,
+          "groups": [
+            {
+              "name": "cykeltur",
+              "title": "Cycling Sthlm-A'dam",
               "expanded": true
             }
           ]
@@ -608,6 +620,98 @@
       "visible": false
     },
     {
+      "name": "taltplatser",
+      "title": "Camping sites",
+      "group": "taltplatser",
+      "source": "data/cykeltur/taltplatser.geojson",
+      "style": "taltplatser",
+      "layerType": "cluster",
+      "clusterStyle": "taltplatser_cluster",
+      "type": "GEOJSON",
+      "projection": "EPSG:3857",
+      "queryable": false,
+      "visible": true
+    },
+    {
+      "name": "brev1",
+      "title": "Map 1",
+      "group": "cykeltur",
+      "source": "data/cykeltur/brev1.geojson",
+      "style": "brev",
+      "type": "GEOJSON",
+      "projection": "EPSG:3857",
+      "queryable": true,
+      "visible": true,
+      "attributes": [
+        {
+          "name": "brev",
+          "title": "Brev: "
+        }
+      ]
+    },
+    {
+      "name": "brev2",
+      "title": "Map 2",
+      "group": "cykeltur",
+      "source": "data/cykeltur/brev2.geojson",
+      "style": "brev",
+      "type": "GEOJSON",
+      "projection": "EPSG:3857",
+      "queryable": true,
+      "visible": true,
+      "attributes": [
+        {
+          "name": "brev",
+          "title": "Brev: "
+        }
+      ]
+    },
+    {
+      "name": "brev3",
+      "title": "Map 3",
+      "group": "cykeltur",
+      "source": "data/cykeltur/brev3.geojson",
+      "style": "brev",
+      "type": "GEOJSON",
+      "projection": "EPSG:3857",
+      "queryable": true,
+      "visible": true,
+      "attributes": [
+        {
+          "name": "brev",
+          "title": "Brev: "
+        }
+      ]
+    },
+    {
+      "name": "brev4",
+      "title": "Map 4",
+      "group": "cykeltur",
+      "source": "data/cykeltur/brev4.geojson",
+      "style": "brev",
+      "type": "GEOJSON",
+      "projection": "EPSG:3857",
+      "queryable": true,
+      "visible": true,
+      "attributes": [
+        {
+          "name": "brev",
+          "title": "Brev: "
+        }
+      ]
+    },
+    {
+      "name": "brev0",
+      "title": "Map 5, no letter",
+      "group": "cykeltur",
+      "source": "data/cykeltur/brev0.geojson",
+      "style": "brev",
+      "type": "GEOJSON",
+      "projection": "EPSG:3857",
+      "queryable": false,
+      "visible": true
+    },
+    {
       "name": "vattendrag_tatort",
       "title": "Watercourses in Urban Areas",
       "group": "vattendrag",
@@ -622,7 +726,7 @@
           "title": "Name: "
         }
       ],
-      "visible": true
+      "visible": false
     },
     {
       "name": "sjoar_tatort",
@@ -639,7 +743,7 @@
           "title": "Name: "
         }
       ],
-      "visible": true
+      "visible": false
     },
     {
       "name": "osm",
@@ -926,18 +1030,68 @@
         }
       ]
     ],
-    "cirkel": [
+    "taltplatser": [
+      [
+        {
+          "label": "Tältplats",
+          "icon": {
+            "size": [
+              70,
+              70
+            ],
+            "src": "img/png/taltplats.png"
+          }
+        }
+      ]
+    ],
+    "taltplatser_cluster": [
       [
         {
           "circle": {
-            "radius": 6,
-            "stroke": {
-              "color": "rgba(0,0,0,1)",
-              "width": 2
-            },
+            "radius": 22,
             "fill": {
-              "color": "rgba(0,0,0,0.5)"
+              "color": "rgba(0, 0, 0, 1)"
+            },
+            "stroke": {
+              "color": "rgba(255, 255, 255, 1)",
+              "width": 3
             }
+          }
+        },
+        {
+          "text": {
+            "font": "Bold 20px Arial",
+            "textAlign": "center",
+            "text": "size",
+            "fill": {
+              "color": "rgba(255, 255, 255, 1)"
+            },
+            "stroke": {
+              "color": "rgba(0, 0, 0, 1)",
+              "width": 1
+            }
+          }
+        }
+      ]
+    ],
+    "brev": [
+      [
+        {
+          "stroke": {
+            "color": "rgba(255, 255, 255, 0.2)",
+            "width": 8
+          }
+        },
+        {
+          "stroke": {
+            "color": "rgba(255, 255, 255, 0.4)",
+            "width": 4
+          }
+        },
+        {
+          "stroke": {
+            "color": "rgba(255, 255, 255, 0.6)",
+            "width": 2
           }
         }
       ]

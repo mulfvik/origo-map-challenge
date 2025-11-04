@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "brev2",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::3857" } },
+"features": [
+{ "type": "Feature", "properties": { "fid": 1, "brev": "Tjena<br>Nu har vi precis kommit över till Helsingör och mår prima. Cyklade tokfel igår mot Helsingborg så vi övernattade strax utanför, efter en helvetesfärd, så hoppet gav vika ett tag. Men efter lite mat så…<br>Som sagt går det mer dollar än vi räknat med så vi hoppas vi kommer så långt som vi räknat med. Det mesta är nu dyngsurt efter att vi cyklat i en störtskur i förrgår så vi tänkte ta in på ett vandrarhem i Köpenhamn och tvätta. Hoppas ni mår bra där hemma. Det är skönt att vara i ett nytt land, men det var också kul att se Sverige mer i detalj. Bra jävla fint! Ödeshög, Nyköping, Jönköping, Axsala där vi vart inbjudna på middag och sovplats. Har blivit inbjudna i Ljungby med, till en stuga men vi avböjde på grund av att det låg en omväg därifrån. Hade lite brådis till Danmark. Trevligt folk vi svenskar. Har inte fått punka än… på cyklarna i alla fall. Sitter nu i hamnen och skålar med tysk öl som vi fick köpa av en kille i Helsingborg, fick en ”Merlot” som sponsring för seglatsen till Afrika. Två tiondelar klara, åtta kvar. <br>Kram Micke & Jocke<br>" }, "geometry": { "type": "LineString", "coordinates": [ [ 1564224.902673136210069, 7801659.561280861496925 ], [ 1499297.974220238393173, 7632334.459318591281772 ], [ 1422240.291082696290687, 7577101.325311724096537 ] ] } }
+]
+}

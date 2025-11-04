@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "brev3",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::3857" } },
+"features": [
+{ "type": "Feature", "properties": { "fid": 1, "brev": "Tjenare<br>Sitter nu vid stranden i Sönderborg och tar en das vila i solen. Imorron tänkte vi cykla vidare till Tyskland. Av motsatsen till Sverige som gav vattenblåsor av värmen har vi haft motvind och regn igenom praktiskt taget hela Danmark. Med yxa och kniv under kudden har vi också haft lite problem att sova med rånare i trakten. All frisk luft verkar sätta en viss prägel på det undermedvetna som tar cheva former i våra drömmar. Jocke skulle cykla och handla vykort, det verkar som att han kommit vilse…<br>Som jag har pratat om tidigare att det finns många slags förståelser av ett och samma ämne. Har det klarnat det att tiden är relativ, med tankar på ”avstånd” och ”snabbhet” i våran resa. Att förmodligen egoismens insikter med är relativa. Därav maximal förvirring i vad man söker. Ett skönt kaos helt enkelt. Jocke är tillbaka och han hade bara tagit en sightseeing på främmande ort. Underbart enligt han. <br>Har nu ätit på en sandstrand vid tysk-danska gränsen. Solen har precis gått… ner över…<br>" }, "geometry": { "type": "LineString", "coordinates": [ [ 1400618.981596259400249, 7567197.331764445640147 ], [ 1398948.411471614148468, 7497896.725270015187562 ], [ 1313206.32686489680782, 7448349.486160304397345 ], [ 1200320.898826004238799, 7418043.125323463231325 ], [ 1099215.117286666994914, 7351803.475031651556492 ], [ 1089614.502965578343719, 7344198.238197253085673 ] ] } }
+]
+}

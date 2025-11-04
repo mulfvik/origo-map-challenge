@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "brev0",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::3857" } },
+"features": [
+{ "type": "Feature", "properties": { "fid": 1 }, "geometry": { "type": "LineString", "coordinates": [ [ 800004.640409611281939, 6983615.297763154841959 ], [ 721164.575480646220967, 6929898.734821314923465 ], [ 671090.929138571489602, 6913622.719691330567002 ], [ 544484.455277916858904, 6867344.61609950195998 ] ] } }
+]
+}

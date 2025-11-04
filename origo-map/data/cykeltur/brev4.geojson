@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "brev4",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::3857" } },
+"features": [
+{ "type": "Feature", "properties": { "fid": 1, "brev": "Tjena på er<br>Benen rullar fortfarande på som ett par trumpinnar. Är nu fem kilometer från Holland. Var tvungna att ta en ölpause i Heede efter en riktig slutspurt. Vägarna har varit underbart bra, man riktigt skäms för Sverige. Tyskarna har varit lite väl hjälpsamma ibland och pratar utmärkt engelska, fast stoltheten är hög som skyn så tyska har man fått höra till öronen trillar av. Trädgårdarna och husen är inte från denna jord, där ligger vi också i lä, halmtak på husen och extremt uppfinningsrikt, riktigt exotiska. Mat och dryck (öl) är otroligt billigt så vi har det riktigt gott framåt kvällen, har blivit stortorsk på frikadeller med senap och bröd. Konstant sugna. Värmen är påfrestande så det har blivit siesta varje dag, samt ett och annat skyfall. Sinnestillstånden är närmare perplexa vid dessa tillfällen men svänger om i takt med vinden. Har med färdens gång också har kommit i takt med ekonomins enorma svulst. Skönt med euron som funkar överallt, slipper växla och hålla på. Ha det bra allesammans.<br>/ Micke & Jocke<br>och grattis på födelsedagen mamma, kram<br>" }, "geometry": { "type": "LineString", "coordinates": [ [ 1049409.26988170389086, 7326577.68590250518173 ], [ 1048168.995801556040533, 7317094.405595064163208 ], [ 995669.479792240192182, 7230710.316617829725146 ], [ 1017249.647403393406421, 7150274.828387246467173 ], [ 1050579.116059334250167, 7128721.402095050550997 ], [ 913845.081236956641078, 7007876.341896201483905 ], [ 800004.640409611281939, 6983615.297763154841959 ] ] } }
+]
+}

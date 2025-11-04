@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "brev1",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::3857" } },
+"features": [
+{ "type": "Feature", "properties": { "fid": 1, "brev": "Tjena morsan<br>Efter 12 timmars vilsecyklingar första dagen kom vi tillslut ut från Stockholm. Nu är vi i Jönköping och vilar en dag, dricker öl i hamnen och har bytt Jockes bakfälg som chevade ur. Landskapen är underbara, får se ett Sverige vi inte sett förr. Kroppen känns helt okej, men en das vila återställer nog oss totalt. Annars gör det en gott att vara utomhus hela tiden och lugnet börjar sjunka över oss. Frihetskänslan är underbar även fast det är svårt att hitta tältplatser. I natt sov vi på en fotbollsplan i Huskvarna. Det går mera pengar än vi räknat med, men fixar det. Utmaningen är mer psykisk än fysisk. Ring gärna Jockes föräldrar och berätta att han lever. Dom kan va på landet. <br>Hälsa alla så gott med kram." }, "geometry": { "type": "LineString", "coordinates": [ [ 2018373.578098015394062, 8229833.034460377879441 ], [ 1958384.899584967177361, 8216806.921055515296757 ], [ 1911773.42851532343775, 8180617.248029606416821 ], [ 1826060.201659174868837, 8106789.539571556262672 ], [ 1768823.886266249231994, 8065151.039952419698238 ] ] } }
+]
+}

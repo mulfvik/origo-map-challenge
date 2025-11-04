@@ -1,0 +1,31 @@
+{
+"type": "FeatureCollection",
+"name": "taltplatser",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::3857" } },
+"features": [
+{ "type": "Feature", "properties": { "fid": 1, "platsnamn": "Trångsund" }, "geometry": { "type": "Point", "coordinates": [ 2018373.578098015626892, 8229833.034460380673409 ] } },
+{ "type": "Feature", "properties": { "fid": 2, "platsnamn": "Södertälje" }, "geometry": { "type": "Point", "coordinates": [ 1958384.899584967177361, 8216806.921055519022048 ] } },
+{ "type": "Feature", "properties": { "fid": 3, "platsnamn": "Axala" }, "geometry": { "type": "Point", "coordinates": [ 1911773.42851532343775, 8180617.248029612004757 ] } },
+{ "type": "Feature", "properties": { "fid": 4, "platsnamn": "Krokek" }, "geometry": { "type": "Point", "coordinates": [ 1826060.201659175101668, 8106789.539571556262672 ] } },
+{ "type": "Feature", "properties": { "fid": 5, "platsnamn": "Gistad" }, "geometry": { "type": "Point", "coordinates": [ 1768823.886266249464825, 8065151.039952419698238 ] } },
+{ "type": "Feature", "properties": { "fid": 6, "platsnamn": "Värnamo" }, "geometry": { "type": "Point", "coordinates": [ 1564224.902673136210069, 7801659.561280861496925 ] } },
+{ "type": "Feature", "properties": { "fid": 7, "platsnamn": "Fagerhult" }, "geometry": { "type": "Point", "coordinates": [ 1499297.974220238626003, 7632334.459318591281772 ] } },
+{ "type": "Feature", "properties": { "fid": 8, "platsnamn": "Helsingborg" }, "geometry": { "type": "Point", "coordinates": [ 1422240.291082696290687, 7577101.325311725027859 ] } },
+{ "type": "Feature", "properties": { "fid": 9, "platsnamn": "Helsingör" }, "geometry": { "type": "Point", "coordinates": [ 1400618.981596259400249, 7567197.331764448434114 ] } },
+{ "type": "Feature", "properties": { "fid": 10, "platsnamn": "Ringsted" }, "geometry": { "type": "Point", "coordinates": [ 1313206.32686489704065, 7448349.486160304397345 ] } },
+{ "type": "Feature", "properties": { "fid": 11, "platsnamn": "Köpenhamn" }, "geometry": { "type": "Point", "coordinates": [ 1398948.411471614381298, 7497896.725270015187562 ] } },
+{ "type": "Feature", "properties": { "fid": 12, "platsnamn": "Nyborg" }, "geometry": { "type": "Point", "coordinates": [ 1200320.898826004005969, 7418043.125323466025293 ] } },
+{ "type": "Feature", "properties": { "fid": 13, "platsnamn": "Augustenborg" }, "geometry": { "type": "Point", "coordinates": [ 1099215.117286666994914, 7351803.475031651556492 ] } },
+{ "type": "Feature", "properties": { "fid": 14, "platsnamn": "Sönderborg" }, "geometry": { "type": "Point", "coordinates": [ 1089614.502965578343719, 7344198.238197255879641 ] } },
+{ "type": "Feature", "properties": { "fid": 15, "platsnamn": "Flensburg" }, "geometry": { "type": "Point", "coordinates": [ 1049409.26988170389086, 7326577.685902503319085 ] } },
+{ "type": "Feature", "properties": { "fid": 16, "platsnamn": "Flensburg" }, "geometry": { "type": "Point", "coordinates": [ 1048168.995801555691287, 7317094.405595066025853 ] } },
+{ "type": "Feature", "properties": { "fid": 17, "platsnamn": "Tönning" }, "geometry": { "type": "Point", "coordinates": [ 995669.479792240192182, 7230710.316617832519114 ] } },
+{ "type": "Feature", "properties": { "fid": 18, "platsnamn": "Brunsbuttel" }, "geometry": { "type": "Point", "coordinates": [ 1017249.647403393406421, 7150274.828387249261141 ] } },
+{ "type": "Feature", "properties": { "fid": 19, "platsnamn": "Gluckstadt" }, "geometry": { "type": "Point", "coordinates": [ 1050579.116059334250167, 7128721.402095052413642 ] } },
+{ "type": "Feature", "properties": { "fid": 20, "platsnamn": "Oldenburg" }, "geometry": { "type": "Point", "coordinates": [ 913845.081236956641078, 7007876.341896201483905 ] } },
+{ "type": "Feature", "properties": { "fid": 21, "platsnamn": null }, "geometry": { "type": "Point", "coordinates": [ 800004.640409610932693, 6983615.297763157635927 ] } },
+{ "type": "Feature", "properties": { "fid": 22, "platsnamn": "Hoogeveen" }, "geometry": { "type": "Point", "coordinates": [ 721164.575480645871721, 6929898.734821317717433 ] } },
+{ "type": "Feature", "properties": { "fid": 23, "platsnamn": null }, "geometry": { "type": "Point", "coordinates": [ 671090.929138571373187, 6913622.719691330567002 ] } },
+{ "type": "Feature", "properties": { "fid": 24, "platsnamn": "Amsterdam" }, "geometry": { "type": "Point", "coordinates": [ 544484.455277916393243, 6867344.616099504753947 ] } }
+]
+}

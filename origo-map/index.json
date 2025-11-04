@@ -78,7 +78,7 @@
     2013061,
     8244004
   ],
-  "zoom": 16,
+  "zoom": 8,
   "resolutions": [
     156543.03390625,
     78271.516953125,
@@ -133,8 +133,8 @@
       "groups": [
         {
           "name": "day1",
-          "title": "Day 1",
-          "expanded": true,
+          "title": "<strong>Day 1 - Points</strong>",
+          "expanded": false,
           "groups": [
             {
               "name": "astroids",
@@ -162,6 +162,30 @@
               "expanded": false
             }
           ]
+        },
+        {
+          "name": "day2",
+          "title": "<strong>Day 2 - Lines</strong>",
+          "expanded": true,
+          "groups": [
+            {
+              "name": "vattendrag",
+              "title": "Watercourses",
+              "expanded": true
+            }
+          ]
+        },
+        {
+          "name": "day3",
+          "title": "<strong>Day 3 - Polygons</strong>",
+          "expanded": true,
+          "groups": [
+            {
+              "name": "sjoar",
+              "title": "Lakes",
+              "expanded": true
+            }
+          ]
         }
       ]
     }
@@ -181,7 +205,7 @@
           "html": "<a href='https://www.swedensolarsystem.se/jorden/' target=\"_blank\" rel=\"noopener noreferrer\">Learn more about Earth</a>"
         }
       ],
-      "visible": true
+      "visible": false
     },
     {
       "name": "Solen",
@@ -197,7 +221,7 @@
           "html": "<a href='https://www.swedensolarsystem.se/solen/' target=\"_blank\" rel=\"noopener noreferrer\">Learn more about Sun</a>"
         }
       ],
-      "visible": true
+      "visible": false
     },
     {
       "name": "Eros",
@@ -213,7 +237,7 @@
           "html": "<a href='https://www.swedensolarsystem.se/asteroid-eros/' target=\"_blank\" rel=\"noopener noreferrer\">Learn more about Eros</a>"
         }
       ],
-      "visible": true
+      "visible": false
     },
     {
       "name": "Jormungandr",
@@ -229,7 +253,7 @@
           "html": "<a href='https://www.swedensolarsystem.se/asteroid-jormungandr/' target=\"_blank\" rel=\"noopener noreferrer\">Learn more about Jormungandr</a>"
         }
       ],
-      "visible": true
+      "visible": false
     },
     {
       "name": "Saltis",
@@ -245,7 +269,7 @@
           "html": "<a href='https://www.swedensolarsystem.se/asteroid-saltis/' target=\"_blank\" rel=\"noopener noreferrer\">Learn more about Saltis</a>"
         }
       ],
-      "visible": true
+      "visible": false
     },
     {
       "name": "Vesta",
@@ -261,7 +285,7 @@
           "html": "<a href='https://www.swedensolarsystem.se/asteroid-vesta/' target=\"_blank\" rel=\"noopener noreferrer\">Learn more about Vesta</a>"
         }
       ],
-      "visible": true
+      "visible": false
     },
     {
       "name": "5025_PL",
@@ -277,7 +301,7 @@
           "html": "<a href='https://www.swedensolarsystem.se/asteroiden-5025-pl/' target=\"_blank\" rel=\"noopener noreferrer\">Learn more about 5025 PL</a>"
         }
       ],
-      "visible": true
+      "visible": false
     },
     {
       "name": "Oumuamua",
@@ -293,7 +317,7 @@
           "html": "<a href='https://www.swedensolarsystem.se/oumuamua' target=\"_blank\" rel=\"noopener noreferrer\">Learn more about Oumuamua</a>"
         }
       ],
-      "visible": true
+      "visible": false
     },
     {
       "name": "Pluto",
@@ -309,7 +333,7 @@
           "html": "<a href='https://www.swedensolarsystem.se/pluto/' target=\"_blank\" rel=\"noopener noreferrer\">Learn more about Pluto</a>"
         }
       ],
-      "visible": true
+      "visible": false
     },
     {
       "name": "Haumea",
@@ -325,7 +349,7 @@
           "html": "<a href='https://www.swedensolarsystem.se/haumea/' target=\"_blank\" rel=\"noopener noreferrer\">Learn more about Haumea</a>"
         }
       ],
-      "visible": true
+      "visible": false
     },
     {
       "name": "Ixion",
@@ -341,7 +365,7 @@
           "html": "<a href='https://www.swedensolarsystem.se/ixion/' target=\"_blank\" rel=\"noopener noreferrer\">Learn more about Ixion</a>"
         }
       ],
-      "visible": true
+      "visible": false
     },
     {
       "name": "Makemake",
@@ -357,7 +381,7 @@
           "html": "<a href='https://www.swedensolarsystem.se/makemake/' target=\"_blank\" rel=\"noopener noreferrer\">Learn more about Makemake</a>"
         }
       ],
-      "visible": true
+      "visible": false
     },
     {
       "name": "Gonggong",
@@ -373,7 +397,7 @@
           "html": "<a href='https://www.swedensolarsystem.se/gonggong/' target=\"_blank\" rel=\"noopener noreferrer\">Learn more about Gonggong</a>"
         }
       ],
-      "visible": true
+      "visible": false
     },
     {
       "name": "Eris",
@@ -389,7 +413,7 @@
           "html": "<a href='https://www.swedensolarsystem.se/eris/' target=\"_blank\" rel=\"noopener noreferrer\">Learn more about Eris</a>"
         }
       ],
-      "visible": true
+      "visible": false
     },
     {
       "name": "Sedna",
@@ -405,7 +429,7 @@
           "html": "<a href='https://www.swedensolarsystem.se/sedna/' target=\"_blank\" rel=\"noopener noreferrer\">Learn more about Sedna</a>"
         }
       ],
-      "visible": true
+      "visible": false
     },
     {
       "name": "Quaoar",
@@ -421,7 +445,7 @@
           "html": "<a href='https://www.swedensolarsystem.se/quaoar/' target=\"_blank\" rel=\"noopener noreferrer\">Learn more about Quaoar</a>"
         }
       ],
-      "visible": true
+      "visible": false
     },
     {
       "name": "Varda",
@@ -437,7 +461,7 @@
           "html": "<a href='https://www.swedensolarsystem.se/varda/' target=\"_blank\" rel=\"noopener noreferrer\">Learn more about Varda</a>"
         }
       ],
-      "visible": true
+      "visible": false
     },
     {
       "name": "Halleys_komet",
@@ -453,7 +477,7 @@
           "html": "<a href='https://www.swedensolarsystem.se/halleys-komet/' target=\"_blank\" rel=\"noopener noreferrer\">Learn more about Halleys komet</a>"
         }
       ],
-      "visible": true
+      "visible": false
     },
     {
       "name": "Swift-Tuttles_komet",
@@ -469,7 +493,7 @@
           "html": "<a href='https://www.swedensolarsystem.se/swift-tuttles-komet/' target=\"_blank\" rel=\"noopener noreferrer\">Learn more about Swift-Tuttles komet</a>"
         }
       ],
-      "visible": true
+      "visible": false
     },
     {
       "name": "Merkurius",
@@ -485,7 +509,7 @@
           "html": "<a href='https://www.swedensolarsystem.se/merkurius/' target=\"_blank\" rel=\"noopener noreferrer\">Learn more about Mercury</a>"
         }
       ],
-      "visible": true
+      "visible": false
     },
     {
       "name": "Venus",
@@ -501,7 +525,7 @@
           "html": "<a href='https://www.swedensolarsystem.se/venus/' target=\"_blank\" rel=\"noopener noreferrer\">Learn more about Venus</a>"
         }
       ],
-      "visible": true
+      "visible": false
     },
     {
       "name": "Mars",
@@ -517,7 +541,7 @@
           "html": "<a href='https://www.swedensolarsystem.se/mars/' target=\"_blank\" rel=\"noopener noreferrer\">Learn more about Mars</a>"
         }
       ],
-      "visible": true
+      "visible": false
     },
     {
       "name": "Jupiter",
@@ -533,7 +557,7 @@
           "html": "<a href='https://www.swedensolarsystem.se/jupiter/' target=\"_blank\" rel=\"noopener noreferrer\">Learn more about Jupiter</a>"
         }
       ],
-      "visible": true
+      "visible": false
     },
     {
       "name": "Saturnus_titan",
@@ -549,7 +573,7 @@
           "html": "<a href='https://www.swedensolarsystem.se/saturnus/' target=\"_blank\" rel=\"noopener noreferrer\">Learn more about Saturn</a>"
         }
       ],
-      "visible": true
+      "visible": false
     },
     {
       "name": "Uranus",
@@ -565,7 +589,7 @@
           "html": "<a href='https://www.swedensolarsystem.se/uranus/' target=\"_blank\" rel=\"noopener noreferrer\">Learn more about Uranus</a>"
         }
       ],
-      "visible": true
+      "visible": false
     },
     {
       "name": "Neptunus",
@@ -581,11 +605,45 @@
           "html": "<a href='https://www.swedensolarsystem.se/neptunus/' target=\"_blank\" rel=\"noopener noreferrer\">Learn more about Neptune</a>"
         }
       ],
+      "visible": false
+    },
+    {
+      "name": "vattendrag_tatort",
+      "title": "Watercourses in Urban Areas",
+      "group": "vattendrag",
+      "source": "data/vattenforekomster_tatorter/vattendrag_tatort.geojson",
+      "style": "vattendrag_tatort",
+      "type": "GEOJSON",
+      "projection": "EPSG:3857",
+      "attribution": "| SMHI",
+      "attributes": [
+        {
+          "name": "VNAMN",
+          "title": "Name: "
+        }
+      ],
+      "visible": true
+    },
+    {
+      "name": "sjoar_tatort",
+      "title": "Lakes in Urban Areas",
+      "group": "sjoar",
+      "source": "data/vattenforekomster_tatorter/sjoar_tatort.geojson",
+      "style": "sjoar_tatort",
+      "type": "GEOJSON",
+      "projection": "EPSG:3857",
+      "attribution": "| SMHI",
+      "attributes": [
+        {
+          "name": "SJONAMN",
+          "title": "Name: "
+        }
+      ],
       "visible": true
     },
     {
       "name": "osm",
-      "title": "Open Street Map",
+      "title": "OpenStreetMap",
       "group": "background",
       "queryable": false,
       "style": "karta_osm",
@@ -880,6 +938,68 @@
             "fill": {
               "color": "rgba(0,0,0,0.5)"
             }
+          }
+        }
+      ]
+    ],
+    "vattendrag_tatort": [
+      [
+        {
+          "stroke": {
+            "color": "rgba(0,150,255,0.2)",
+            "width": 8
+          }
+        },
+        {
+          "stroke": {
+            "color": "rgba(0,150,255,0.4)",
+            "width": 5
+          }
+        },
+        {
+          "stroke": {
+            "color": "rgba(0,150,255,0.8)",
+            "width": 3
+          }
+        },
+        {
+          "stroke": {
+            "color": "rgba(0,200,255,1.0)",
+            "width": 1.5
+          }
+        }
+      ]
+    ],
+    "sjoar_tatort": [
+      [
+        {
+          "fill": {
+            "color": "rgba(0,150,255,0.03)"
+          },
+          "stroke": {
+            "color": "rgba(0,150,255,0.2)",
+            "width": 8
+          }
+        },
+        {
+          "fill": {
+            "color": "rgba(0,180,255,0.03)"
+          },
+          "stroke": {
+            "color": "rgba(0,180,255,0.4)",
+            "width": 5
+          }
+        },
+        {
+          "stroke": {
+            "color": "rgba(0,150,255,0.8)",
+            "width": 3
+          }
+        },
+        {
+          "stroke": {
+            "color": "rgba(0,200,255,1.0)",
+            "width": 1.5
           }
         }
       ]

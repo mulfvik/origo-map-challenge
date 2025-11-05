@@ -646,6 +646,12 @@
         {
           "name": "brev",
           "title": "Brev: "
+        },
+        {
+          "html": "<br><hr><br>"
+        },
+        {
+          "html": "<a href='img/png/cykeltur_karta1.jpg' target=\"_blank\" rel=\"noopener noreferrer\"><img src='img/png/cykeltur_karta1.jpg'></a>"
         }
       ]
     },
@@ -663,6 +669,12 @@
         {
           "name": "brev",
           "title": "Brev: "
+        },
+        {
+          "html": "<br><hr><br>"
+        },
+        {
+          "html": "<a href='img/png/cykeltur_karta2.jpg' target=\"_blank\" rel=\"noopener noreferrer\"><img src='img/png/cykeltur_karta2.jpg'></a>"
         }
       ]
     },
@@ -680,6 +692,12 @@
         {
           "name": "brev",
           "title": "Brev: "
+        },
+        {
+          "html": "<br><hr><br>"
+        },
+        {
+          "html": "<a href='img/png/cykeltur_karta3.jpg' target=\"_blank\" rel=\"noopener noreferrer\"><img src='img/png/cykeltur_karta3.jpg'></a>"
         }
       ]
     },
@@ -697,6 +715,12 @@
         {
           "name": "brev",
           "title": "Brev: "
+        },
+        {
+          "html": "<br><hr><br>"
+        },
+        {
+          "html": "<a href='img/png/cykeltur_karta4.jpg' target=\"_blank\" rel=\"noopener noreferrer\"><img src='img/png/cykeltur_karta4.jpg'></a>"
         }
       ]
     },
@@ -708,8 +732,13 @@
       "style": "brev",
       "type": "GEOJSON",
       "projection": "EPSG:3857",
-      "queryable": false,
-      "visible": true
+      "queryable": true,
+      "visible": true,
+      "attributes": [
+        {
+          "html": "<a href='img/png/cykeltur_karta5.jpg' target=\"_blank\" rel=\"noopener noreferrer\"><img src='img/png/cykeltur_karta5.jpg'></a>"
+        }
+      ]
     },
     {
       "name": "vattendrag_tatort",

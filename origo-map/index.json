@@ -128,7 +128,7 @@
     },
     {
       "name": "map-challenge",
-      "title": "#30daymapchallenge",
+      "title": "<a href='https://30daymapchallenge.com/' target=\"_blank\" rel=\"noopener noreferrer\">#30daymapchallenge 2025</a>",
       "expanded": true,
       "groups": [
         {
@@ -190,7 +190,7 @@
         {
           "name": "day4",
           "title": "<strong>Day 4 - My Data</strong>",
-          "expanded": true,
+          "expanded": false,
           "groups": [
             {
               "name": "cykeltur",
@@ -622,7 +622,7 @@
     {
       "name": "taltplatser",
       "title": "Camping sites",
-      "group": "taltplatser",
+      "group": "cykeltur",
       "source": "data/cykeltur/taltplatser.geojson",
       "style": "taltplatser",
       "layerType": "cluster",
@@ -630,7 +630,7 @@
       "type": "GEOJSON",
       "projection": "EPSG:3857",
       "queryable": false,
-      "visible": true
+      "visible": false
     },
     {
       "name": "brev1",
@@ -641,7 +641,7 @@
       "type": "GEOJSON",
       "projection": "EPSG:3857",
       "queryable": true,
-      "visible": true,
+      "visible": false,
       "attributes": [
         {
           "name": "brev",
@@ -664,7 +664,7 @@
       "type": "GEOJSON",
       "projection": "EPSG:3857",
       "queryable": true,
-      "visible": true,
+      "visible": false,
       "attributes": [
         {
           "name": "brev",
@@ -687,7 +687,7 @@
       "type": "GEOJSON",
       "projection": "EPSG:3857",
       "queryable": true,
-      "visible": true,
+      "visible": false,
       "attributes": [
         {
           "name": "brev",
@@ -710,7 +710,7 @@
       "type": "GEOJSON",
       "projection": "EPSG:3857",
       "queryable": true,
-      "visible": true,
+      "visible": false,
       "attributes": [
         {
           "name": "brev",
@@ -733,7 +733,7 @@
       "type": "GEOJSON",
       "projection": "EPSG:3857",
       "queryable": true,
-      "visible": true,
+      "visible": false,
       "attributes": [
         {
           "html": "<a href='img/png/cykeltur_karta5.jpg' target=\"_blank\" rel=\"noopener noreferrer\"><img src='img/png/cykeltur_karta5.jpg'></a>"
@@ -776,10 +776,10 @@
     },
     {
       "name": "osm",
-      "title": "OpenStreetMap",
+      "title": "OpenStreetMap dark",
       "group": "background",
       "queryable": false,
-      "style": "karta_osm",
+      "style": "karta_osm_dark",
       "type": "OSM",
       "visible": true,
       "css": {
@@ -795,6 +795,15 @@
         "hue": 0.0,
         "gamma": 1.0
       }
+    },
+    {
+      "name": "osm",
+      "title": "OpenStreetMap",
+      "group": "background",
+      "queryable": false,
+      "style": "karta_osm",
+      "type": "OSM",
+      "visible": false
     }
   ],
   "styles": {
@@ -1183,6 +1192,15 @@
           "stroke": {
             "color": "rgba(0,200,255,1.0)",
             "width": 1.5
+          }
+        }
+      ]
+    ],
+    "karta_osm_dark": [
+      [
+        {
+          "image": {
+            "src": "img/png/osm_dark.png"
           }
         }
       ]

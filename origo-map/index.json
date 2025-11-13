@@ -790,12 +790,12 @@
       "type": "THREEDTILE",
       "abstract": "Byggnader från OSM",
       "url": "OSM-Buildings",
-      "group": "root",
+      "group": "none",
       "queryable": true,
       "maximumScreenSpaceError": 16,
       "showOutline": true,
       "outlineColor": "SNOW",
-      "visible": false,
+      "visible": true,
       "filter": "",
       "style": {
         "color": {

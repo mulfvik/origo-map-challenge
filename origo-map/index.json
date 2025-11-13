@@ -223,8 +223,7 @@
         {
           "name": "miscellaneous",
           "title": "<strong>Miscellaneous</strong>",
-          "expanded": false,
-          "exclusive": true
+          "expanded": false
         }
       ]
     }

@@ -18,9 +18,56 @@
 <body>
   <div id="app-wrapper"></div>
   <script src="origo-map/js/origo.min.js"></script>
-  <script src="origo-map/plugins/globe/globe.min.js"></script>
+  <script src="origo-map/plugins/globe/globe.umd.min.js"></script>
   <script>
-    const origo = Origo('index.json', {baseUrl: 'origo-map/'});
+    window.Origo.layerType.THREEDTILE = window.Globe().threedtiletype();
+    const origo = Origo('index.json', { baseUrl: 'origo-map/' });
+    origo.on('load', (viewer) => {
+      const globe = Globe({
+        showGlobe: true,
+        globeOnStart: false,
+        deactivateControls: [],
+        settings: {
+          depthTestAgainstTerrain: true,
+          enableAtmosphere: true,
+          enableGroundAtmosphere: true,
+          enableFog: true,
+          enableLighting: true,
+          shadows: {
+            darkness: 0.3,
+            fadingEnabled: true,
+            maximumDistance: 5000,
+            normalOffset: true,
+            size: 4096,
+            softShadows: false
+          },
+          skyBox: {
+            url: 'http://localhost:5500/origo-map/plugins/globe/cesiumassets/Assets/Textures/SkyBox/',
+            images: {
+              pX: 'tycho2t3_80_px.jpg',
+              nX: 'tycho2t3_80_mx.jpg',
+              pY: 'tycho2t3_80_py.jpg',
+              nY: 'tycho2t3_80_my.jpg',
+              pZ: 'tycho2t3_80_pz.jpg',
+              nZ: 'tycho2t3_80_mz.jpg'
+            }
+          }
+        },
+        cesiumIontoken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI0OGU3M2MyNi0wMzFhLTQxYjEtYmVhYi04Zjc1MDVlYWQyZDEiLCJpZCI6NDAxMDgsImlhdCI6MTc0MDQ4MjIyMH0.DfcojgC3xCwemd4vGvPPOSsyFCasimGM3YsMg1AcbqI',
+        "gltf": [
+          {
+            "url": "http://localhost:5500/origo-map/data/gltf/stjarnor/solen.gltf",
+            "lat": 18.08321,
+            "lng": 59.29361,
+            "height": 0, // Needs heightReference to be set to NONE
+            "heightReference": "RELATIVE_TO_TERRAIN" //https://cesium.com/learn/ion-sdk/ref-doc/global.html?classFilter=heightReference#HeightReference
+          }
+        ],
+        cesiumTerrainProvider: '',
+        cesiumIonassetIdTerrain: ''
+      });
+      viewer.addComponent(globe);
+    });
   </script>
 </body>
 

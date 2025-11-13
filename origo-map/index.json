@@ -135,6 +135,8 @@
           "name": "day1",
           "title": "<strong>Day 1 - Points</strong>",
           "expanded": false,
+          "draggable": true,
+          "opacityControl": true,
           "groups": [
             {
               "name": "astroids",
@@ -167,6 +169,8 @@
           "name": "day2",
           "title": "<strong>Day 2 - Lines</strong>",
           "expanded": false,
+          "draggable": true,
+          "opacityControl": true,
           "groups": [
             {
               "name": "vattendrag",
@@ -179,6 +183,8 @@
           "name": "day3",
           "title": "<strong>Day 3 - Polygons</strong>",
           "expanded": false,
+          "draggable": true,
+          "opacityControl": true,
           "groups": [
             {
               "name": "sjoar",
@@ -191,6 +197,8 @@
           "name": "day4",
           "title": "<strong>Day 4 - My Data</strong>",
           "expanded": false,
+          "draggable": true,
+          "opacityControl": true,
           "groups": [
             {
               "name": "cykeltur",
@@ -202,13 +210,22 @@
         {
           "name": "day5",
           "title": "<strong><a href='https://mulfvik.github.io/map-challenge-earth/' target=\"_blank\" rel=\"noopener noreferrer\">Day 5 - Earth</a></strong>",
-          "expanded": false
-        }
+          "expanded": false,
+          "draggable": true,
+          "opacityControl": true
+        },
         // {
         //   "name": "day6",
         //   "title": "<strong>Day 6 - Dimensions</strong>",
-        //   "expanded": false
+        //   "expanded": false,
+          // "draggable": true
         // }
+        {
+          "name": "miscellaneous",
+          "title": "<strong>Miscellaneous</strong>",
+          "expanded": false,
+          "exclusive": true
+        }
       ]
     }
   ],
@@ -803,17 +820,17 @@
       "visible": false
     },
     {
-      "name": "osm_buildings",
-      "title": "Open street map byggnader",
+      "name": "osm_buildings_colored",
+      "title": "OpenStreetMap Buildings Colored",
       "type": "THREEDTILE",
-      "abstract": "Byggnader från OSM",
+      "abstract": "Buildings from OpenStreetMap",
       "url": "OSM-Buildings",
-      "group": "none",
+      "group": "miscellaneous",
       "queryable": true,
       "maximumScreenSpaceError": 16,
       "showOutline": true,
       "outlineColor": "SNOW",
-      "visible": true,
+      "visible": false,
       "filter": "",
       "style": {
         "color": {
@@ -853,6 +870,19 @@
           ]
         }
       }
+    },
+    {
+      "name": "osm_buildings",
+      "title": "OpenStreetMap Buildings",
+      "type": "THREEDTILE",
+      "abstract": "Buildings from OpenStreetMap",
+      "url": "OSM-Buildings",
+      "group": "miscellaneous",
+      "queryable": true,
+      "maximumScreenSpaceError": 16,
+      "showOutline": true,
+      "outlineColor": "SNOW",
+      "visible": false
     },
     {
       "name": "osm",

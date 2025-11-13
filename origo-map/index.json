@@ -214,6 +214,16 @@
   ],
   "layers": [
     {
+      "name": "dummie",
+      "group": "none",
+      "source": "data/planeter/Jorden.geojson",
+      "style": "dummie",
+      "type": "GEOJSON",
+      "visible": true,
+      "attribution": " | Cesium Ion | NASA",
+      "queryable": false
+    },
+    {
       "name": "Jorden",
       "title": "Earth",
       "group": "planeter",
@@ -1318,6 +1328,21 @@
           "stroke": {
             "color": "rgba(0,200,255,1.0)",
             "width": 1.5
+          }
+        }
+      ]
+    ],
+    "dummie": [
+       [
+        {
+          "circle": {
+            "radius": 1,
+            "fill": {
+              "color": "rgba(0, 0, 0, 0)"
+            },
+            "stroke": {
+              "color": "rgba(0, 0, 0, 0)"
+            }
           }
         }
       ]

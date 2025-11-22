@@ -20,54 +20,215 @@
   <script src="origo-map/js/origo.min.js"></script>
   <script src="origo-map/plugins/globe/globe.umd.min.js"></script>
   <script>
-    // window.Origo.layerType.THREEDTILE = window.Globe().threedtiletype();
+    window.Origo.layerType.THREEDTILE = window.Globe().threedtiletype();
     const origo = Origo('index.json', { baseUrl: 'origo-map/' });
-    // origo.on('load', (viewer) => {
-    //   const globe = Globe({
-    //     showGlobe: true,
-    //     globeOnStart: false,
-    //     deactivateControls: [],
-    //     settings: {
-    //       depthTestAgainstTerrain: true,
-    //       enableAtmosphere: true,
-    //       enableGroundAtmosphere: true,
-    //       enableFog: true,
-    //       enableLighting: true,
-    //       shadows: {
-    //         darkness: 0.3,
-    //         fadingEnabled: true,
-    //         maximumDistance: 5000,
-    //         normalOffset: true,
-    //         size: 4096,
-    //         softShadows: false
-    //       },
-    //       skyBox: {
-    //         url: 'plugins/globe/cesiumassets/Assets/Textures/SkyBox/',
-    //         images: {
-    //           pX: 'tycho2t3_80_px.jpg',
-    //           nX: 'tycho2t3_80_mx.jpg',
-    //           pY: 'tycho2t3_80_py.jpg',
-    //           nY: 'tycho2t3_80_my.jpg',
-    //           pZ: 'tycho2t3_80_pz.jpg',
-    //           nZ: 'tycho2t3_80_mz.jpg'
-    //         }
-    //       }
-    //     },
-    //     cesiumIontoken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI0OGU3M2MyNi0wMzFhLTQxYjEtYmVhYi04Zjc1MDVlYWQyZDEiLCJpZCI6NDAxMDgsImlhdCI6MTc0MDQ4MjIyMH0.DfcojgC3xCwemd4vGvPPOSsyFCasimGM3YsMg1AcbqI',
-    //     "gltf": [
-    //       {
-    //         "url": "data/gltf/stjarnor/solen.gltf",
-    //         "lat": 18.08321,
-    //         "lng": 59.29361,
-    //         "height": 0, // Needs heightReference to be set to NONE
-    //         "heightReference": "RELATIVE_TO_TERRAIN" //https://cesium.com/learn/ion-sdk/ref-doc/global.html?classFilter=heightReference#HeightReference
-    //       }
-    //     ],
-    //     cesiumTerrainProvider: '',
-    //     cesiumIonassetIdTerrain: ''
-    //   });
-    //   viewer.addComponent(globe);
-    // });
+    origo.on('load', (viewer) => {
+      const globe = Globe({
+        showGlobe: true,
+        globeOnStart: new URLSearchParams(window.location.search).get('globe') ? true : false,
+        deactivateControls: [],
+        settings: {
+          depthTestAgainstTerrain: true,
+          enableAtmosphere: true,
+          enableGroundAtmosphere: true,
+          enableFog: true,
+          enableLighting: true,
+          shadows: {
+            darkness: 0.3,
+            fadingEnabled: true,
+            maximumDistance: 5000,
+            normalOffset: true,
+            size: 4096,
+            softShadows: false
+          },
+          skyBox: {
+            url: 'plugins/globe/cesiumassets/Assets/Textures/SkyBox/',
+            images: {
+              pX: 'tycho2t3_80_px.jpg',
+              nX: 'tycho2t3_80_mx.jpg',
+              pY: 'tycho2t3_80_py.jpg',
+              nY: 'tycho2t3_80_my.jpg',
+              pZ: 'tycho2t3_80_pz.jpg',
+              nZ: 'tycho2t3_80_mz.jpg'
+            }
+          }
+        },
+        cesiumIontoken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI1MDI4ZjZhZS1mYmE0LTQ2YTQtYWQ0Ny1mNTU4MzA1MjM3MWYiLCJpZCI6NTUwMCwiaWF0IjoxNzYzODM2Mzk5fQ.fdu4cbIWKEWY6jFGZDk4CEkDWMWD9_v9u01A92Q25UI',
+        "gltf": [
+          {
+            "url": "data/gltf/stjarnor/sun.gltf",
+            "lat": 18.08321,
+            "lng": 59.29361,
+            "height": 0, // Needs heightReference to be set to NONE
+            "heightReference": "RELATIVE_TO_TERRAIN" //https://cesium.com/learn/ion-sdk/ref-doc/global.html?classFilter=heightReference#HeightReference
+          },
+          {
+            "url": "data/gltf/planeter/mercurius.gltf",
+            "lat": 18.0709375,
+            "lng": 59.3196875,
+            "height": 0,
+            "heightReference": "RELATIVE_TO_TERRAIN"
+          },
+          {
+            "url": "data/gltf/planeter/venus.gltf",
+            "lat": 18.0584375,
+            "lng": 59.3526875,
+            "height": 0,
+            "heightReference": "RELATIVE_TO_TERRAIN"
+          },
+          {
+            "url": "data/gltf/planeter/earth.gltf",
+            "lat": 18.0539375,
+            "lng": 59.3689375,
+            "height": 0,
+            "heightReference": "RELATIVE_TO_TERRAIN"
+          },
+          {
+            "url": "data/gltf/planeter/mars.gltf",
+            "lat": 18.0365625,
+            "lng": 59.3984375,
+            "height": 0,
+            "heightReference": "RELATIVE_TO_TERRAIN"
+          },
+          {
+            "url": "data/gltf/planeter/jupiter.gltf",
+            "lat": 17.9310431,
+            "lng": 59.6489812,
+            "height": 0,
+            "heightReference": "RELATIVE_TO_TERRAIN"
+          },
+          {
+            "url": "data/gltf/planeter/uranus.gltf",
+            "lat": 17.8798983,
+            "lng": 60.4069978,
+            "height": 0,
+            "heightReference": "RELATIVE_TO_TERRAIN"
+          },
+          {
+            "url": "data/gltf/planeter/neptunus.gltf",
+            "lat": 17.0628209,
+            "lng": 61.3055762,
+            "height": 0,
+            "heightReference": "RELATIVE_TO_TERRAIN"
+          },
+          {
+            "url": "data/gltf/astroid/astroid.gltf",
+            "lat": 17.8011101,
+            "lng": 59.7195239,
+            "height": 0,
+            "heightReference": "RELATIVE_TO_TERRAIN"
+          },
+          {
+            "url": "data/gltf/astroid/astroid.gltf",
+            "lat": 18.0455497,
+            "lng": 59.3937924,
+            "height": 0,
+            "heightReference": "RELATIVE_TO_TERRAIN"
+          },
+          {
+            "url": "data/gltf/astroid/astroid.gltf",
+            "lat": 18.0726991,
+            "lng": 59.309613,
+            "height": 0,
+            "heightReference": "RELATIVE_TO_TERRAIN"
+          },
+          {
+            "url": "data/gltf/astroid/astroid.gltf",
+            "lat": 12.7451792,
+            "lng": 56.7347117,
+            "height": 0,
+            "heightReference": "RELATIVE_TO_TERRAIN"
+          },
+          {
+            "url": "data/gltf/astroid/astroid.gltf",
+            "lat": 18.304966,
+            "lng": 59.2723633,
+            "height": 0,
+            "heightReference": "RELATIVE_TO_TERRAIN"
+          },
+          {
+            "url": "data/gltf/astroid/astroid.gltf",
+            "lat": 18.0637187,
+            "lng": 59.4401263,
+            "height": 0,
+            "heightReference": "RELATIVE_TO_TERRAIN"
+          },
+          {
+            "url": "data/gltf/dvargplaneter/pluto.gltf",
+            "lat": 16.8234567,
+            "lng": 61.8456789,
+            "height": 0,
+            "heightReference": "RELATIVE_TO_TERRAIN"
+          },
+          {
+            "url": "data/gltf/dvargplaneter/eris.gltf",
+            "lat": 16.5123456,
+            "lng": 62.1234567,
+            "height": 0,
+            "heightReference": "RELATIVE_TO_TERRAIN"
+          },
+          {
+            "url": "data/gltf/dvargplaneter/makemake.gltf",
+            "lat": 16.7890123,
+            "lng": 61.9876543,
+            "height": 0,
+            "heightReference": "RELATIVE_TO_TERRAIN"
+          },
+          {
+            "url": "data/gltf/dvargplaneter/gonggong.gltf",
+            "lat": 16.4567890,
+            "lng": 62.3456789,
+            "height": 0,
+            "heightReference": "RELATIVE_TO_TERRAIN"
+          },
+          {
+            "url": "data/gltf/dvargplaneter/humea.gltf",
+            "lat": 16.6789012,
+            "lng": 62.0123456,
+            "height": 0,
+            "heightReference": "RELATIVE_TO_TERRAIN"
+          },
+          {
+            "url": "data/gltf/dvargplaneter/ixion.gltf",
+            "lat": 16.3456789,
+            "lng": 62.4567890,
+            "height": 0,
+            "heightReference": "RELATIVE_TO_TERRAIN"
+          },
+          {
+            "url": "data/gltf/dvargplaneter/quaoar.gltf",
+            "lat": 16.5678901,
+            "lng": 62.2345678,
+            "height": 0,
+            "heightReference": "RELATIVE_TO_TERRAIN"
+          },
+          {
+            "url": "data/gltf/dvargplaneter/sedna.gltf",
+            "lat": 16.2345678,
+            "lng": 62.5678901,
+            "height": 0,
+            "heightReference": "RELATIVE_TO_TERRAIN"
+          },
+          {
+            "url": "data/gltf/dvargplaneter/varda.gltf",
+            "lat": 16.4321098,
+            "lng": 62.3210987,
+            "height": 0,
+            "heightReference": "RELATIVE_TO_TERRAIN"
+          },
+          {
+            "url": "data/gltf/dvargplaneter/moon.gltf",
+            "lat": 18.0589375,
+            "lng": 59.3639375,
+            "height": 0,
+            "heightReference": "RELATIVE_TO_TERRAIN"
+          }
+        ],
+        cesiumTerrainProvider: '',
+        cesiumIonassetIdTerrain: 1
+      });
+      viewer.addComponent(globe);
+    });
   </script>
 </body>
 

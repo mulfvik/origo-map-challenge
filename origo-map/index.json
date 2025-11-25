@@ -115,7 +115,11 @@
   "featureinfoOptions": {
     "infowindow": "infowindow"
   },
-  "source": {},
+  "source": {
+    "nvdb": {
+      "url": "https://geo-netinfo.trafikverket.se/MapService/wms.axd/NetInfo_1_8"
+    }
+  },
   "groups": [
     {
       "name": "background",
@@ -215,6 +219,13 @@
           "title": "<strong>Day 6 - Dimensions</strong>",
           "expanded": false,
           "draggable": true
+        },
+        {
+          "name": "day7",
+          "title": "<strong>Day 7 - Accessibility</strong>",
+          "expanded": false,
+          "draggable": true,
+          "opacityControl": true
         },
         {
           "name": "miscellaneous",
@@ -815,6 +826,30 @@
       "visible": false
     },
     {
+      "name": "Turismcykelled",
+      "source": "nvdb",
+      "title": "Tourism cycle route",
+      "group": "day7",
+      "queryable": true,
+      "style": "Turismcykelled",
+      "type": "WMS",
+      "visible": false,
+      "attribution": "| NVDB",
+      "format": "image/png"
+    },
+    {
+      "name": "StatligGangCykelvag",
+      "source": "nvdb",
+      "title": "State walking/cycling path",
+      "group": "day7",
+      "queryable": true,
+      "style": "StatligGangCykelvag",
+      "type": "WMS",
+      "visible": false,
+      "attribution": "| NVDB",
+      "format": "image/png"
+    },
+    {
       "name": "osm_buildings",
       "title": "OSM Buildings",
       "type": "THREEDTILE",
@@ -881,7 +916,10 @@
               120
             ],
             "src": "img/png/Solen.png",
-            "anchor": [0.5, 1]
+            "anchor": [
+              0.5,
+              1
+            ]
           }
         }
       ]
@@ -896,7 +934,10 @@
               70
             ],
             "src": "img/png/Jorden.png",
-            "anchor": [0.5, 1]
+            "anchor": [
+              0.5,
+              1
+            ]
           }
         }
       ]
@@ -911,7 +952,10 @@
               50
             ],
             "src": "img/png/Astroid.png",
-            "anchor": [0.5, 1]
+            "anchor": [
+              0.5,
+              1
+            ]
           }
         }
       ]
@@ -926,7 +970,10 @@
               50
             ],
             "src": "img/png/Dvargplanet.png",
-            "anchor": [0.5, 1]
+            "anchor": [
+              0.5,
+              1
+            ]
           }
         }
       ]
@@ -941,7 +988,10 @@
               50
             ],
             "src": "img/png/Komet.png",
-            "anchor": [0.5, 1]
+            "anchor": [
+              0.5,
+              1
+            ]
           }
         }
       ]
@@ -956,7 +1006,10 @@
               50
             ],
             "src": "img/png/Haumea.png",
-            "anchor": [0.5, 1]
+            "anchor": [
+              0.5,
+              1
+            ]
           }
         }
       ]
@@ -971,7 +1024,10 @@
               50
             ],
             "src": "img/png/Makemake.png",
-            "anchor": [0.5, 1]
+            "anchor": [
+              0.5,
+              1
+            ]
           }
         }
       ]
@@ -986,7 +1042,10 @@
               50
             ],
             "src": "img/png/Eris.png",
-            "anchor": [0.5, 1]
+            "anchor": [
+              0.5,
+              1
+            ]
           }
         }
       ]
@@ -1001,7 +1060,10 @@
               70
             ],
             "src": "img/png/Merkurius.png",
-            "anchor": [0.5, 1]
+            "anchor": [
+              0.5,
+              1
+            ]
           }
         }
       ]
@@ -1016,7 +1078,10 @@
               70
             ],
             "src": "img/png/Venus.png",
-            "anchor": [0.5, 1]
+            "anchor": [
+              0.5,
+              1
+            ]
           }
         }
       ]
@@ -1031,7 +1096,10 @@
               70
             ],
             "src": "img/png/Mars.png",
-            "anchor": [0.5, 1]
+            "anchor": [
+              0.5,
+              1
+            ]
           }
         }
       ]
@@ -1046,7 +1114,10 @@
               70
             ],
             "src": "img/png/Jupiter.png",
-            "anchor": [0.5, 1]
+            "anchor": [
+              0.5,
+              1
+            ]
           }
         }
       ]
@@ -1061,7 +1132,10 @@
               120
             ],
             "src": "img/png/Saturnus_titan.png",
-            "anchor": [0.5, 1]
+            "anchor": [
+              0.5,
+              1
+            ]
           }
         }
       ]
@@ -1076,7 +1150,10 @@
               70
             ],
             "src": "img/png/Uranus.png",
-            "anchor": [0.5, 1]
+            "anchor": [
+              0.5,
+              1
+            ]
           }
         }
       ]
@@ -1091,7 +1168,10 @@
               70
             ],
             "src": "img/png/Neptunus.png",
-            "anchor": [0.5, 1]
+            "anchor": [
+              0.5,
+              1
+            ]
           }
         }
       ]
@@ -1102,7 +1182,10 @@
           "label": "Origo",
           "icon": {
             "src": "img/png/origo_logo.png",
-            "anchor": [0.5, 1]
+            "anchor": [
+              0.5,
+              1
+            ]
           }
         }
       ]
@@ -1340,8 +1423,46 @@
         }
       ]
     ],
+    "Turismcykelled": [
+      [
+        {
+          "label": "Tourism cycle route",
+          "icon": {
+            "src": "img/png/bicycle-custom.png"
+          },
+          "header": true
+        }
+      ],
+      [
+        {
+          "icon": {
+            "src": "https://geo-netinfo.trafikverket.se/MapService/wms.axd/NetInfo_1_8?&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetLegendGraphic&LAYER=Turismcykelled&FORMAT=image/png&STYLE=default&SLD_VERSION=1.1.0&LAYERTITLE=false&ITEMFONTSIZE=10&DPI=96&ICONLABELSPACE=1&SYMBOLWIDTH=6&BOXSPACE=1"
+          },
+          "extendedLegend": true
+        }
+      ]
+    ],
+    "StatligGangCykelvag": [
+      [
+        {
+          "label": "State walking/cycling path",
+          "icon": {
+            "src": "img/png/bicycle-custom.png"
+          },
+          "header": true
+        }
+      ],
+      [
+        {
+          "icon": {
+            "src": "https://geo-netinfo.trafikverket.se/MapService/wms.axd/NetInfo_1_8?&SERVICE=WMS&VERSION=1.3.0&REQUEST=GetLegendGraphic&LAYER=StatligGangCykelvag&FORMAT=image/png&STYLE=default&SLD_VERSION=1.1.0&LAYERTITLE=false&ITEMFONTSIZE=10&DPI=96&ICONLABELSPACE=1&SYMBOLWIDTH=6&BOXSPACE=1"
+          },
+          "extendedLegend": true
+        }
+      ]
+    ],
     "dummie": [
-       [
+      [
         {
           "circle": {
             "radius": 1,

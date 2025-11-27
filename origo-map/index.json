@@ -883,7 +883,7 @@
       "visible": false
     },
     {
-      "name": "osm",
+      "name": "osm_dark",
       "title": "OpenStreetMap Dark",
       "group": "background",
       "queryable": false,

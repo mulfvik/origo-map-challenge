@@ -24,7 +24,7 @@
     const origo = Origo('index.json', { baseUrl: 'origo-map/' });
     origo.on('load', (viewer) => {
       const globe = Globe({
-        showGlobe: true,
+        showGlobe: false,
         globeOnStart: new URLSearchParams(window.location.search).get('globe') ? true : false,
         deactivateControls: [],
         settings: {
@@ -53,7 +53,7 @@
             }
           }
         },
-        cesiumIontoken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI1MDI4ZjZhZS1mYmE0LTQ2YTQtYWQ0Ny1mNTU4MzA1MjM3MWYiLCJpZCI6NTUwMCwiaWF0IjoxNzYzODM2Mzk5fQ.fdu4cbIWKEWY6jFGZDk4CEkDWMWD9_v9u01A92Q25UI',
+        cesiumIontoken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIyYTA0MzM5Ni0zZjAzLTQ1MGUtYWMwMS1jZjY1Y2Y3NDE5NWEiLCJpZCI6NTUwMCwiaWF0IjoxNzYzODM2NTUyfQ.P7jtmXz4W_DZxt0XM5BCGaPSucy3hnNsRBPNf82ZYRI',
         "gltf": [
           {
             "url": "data/gltf/stjarnor/sun.gltf",
@@ -225,7 +225,7 @@
           }
         ],
         cesiumTerrainProvider: '',
-        cesiumIonassetIdTerrain: 1
+        cesiumIonassetIdTerrain: ''
       });
       viewer.addComponent(globe);
     });

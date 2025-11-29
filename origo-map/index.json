@@ -118,6 +118,9 @@
   "source": {
     "nvdb": {
       "url": "https://geo-netinfo.trafikverket.se/MapService/wms.axd/NetInfo_1_8"
+    },
+    "tiles": {
+      "url": "http: //127.0.0.1:5500"
     }
   },
   "groups": [
@@ -223,6 +226,13 @@
         {
           "name": "day7",
           "title": "<strong>Day 7 - Accessibility</strong>",
+          "expanded": false,
+          "draggable": true,
+          "opacityControl": true
+        },
+        {
+          "name": "day8",
+          "title": "<strong>Day 8 - Urban</strong>",
           "expanded": false,
           "draggable": true,
           "opacityControl": true
@@ -672,7 +682,6 @@
       "clusterStyle": "taltplatser_cluster",
       "type": "GEOJSON",
       "altitudeMode": "clampToGround",
-      "projection": "EPSG:3857",
       "queryable": false,
       "visible": false
     },
@@ -684,7 +693,6 @@
       "style": "brev",
       "type": "GEOJSON",
       "altitudeMode": "clampToGround",
-      "projection": "EPSG:3857",
       "queryable": true,
       "visible": false,
       "attributes": [
@@ -708,7 +716,6 @@
       "style": "brev",
       "type": "GEOJSON",
       "altitudeMode": "clampToGround",
-      "projection": "EPSG:3857",
       "queryable": true,
       "visible": false,
       "attributes": [
@@ -732,8 +739,7 @@
       "style": "brev",
       "type": "GEOJSON",
       "altitudeMode": "clampToGround",
-      "projection": "EPSG:3857",
-      "queryable": true,
+        "queryable": true,
       "visible": false,
       "attributes": [
         {
@@ -756,7 +762,6 @@
       "style": "brev",
       "type": "GEOJSON",
       "altitudeMode": "clampToGround",
-      "projection": "EPSG:3857",
       "queryable": true,
       "visible": false,
       "attributes": [
@@ -780,7 +785,6 @@
       "style": "brev",
       "type": "GEOJSON",
       "altitudeMode": "clampToGround",
-      "projection": "EPSG:3857",
       "queryable": true,
       "visible": false,
       "attributes": [
@@ -797,7 +801,6 @@
       "style": "vattendrag_tatort",
       "type": "GEOJSON",
       "altitudeMode": "clampToGround",
-      "projection": "EPSG:3857",
       "attribution": "| SMHI",
       "attributes": [
         {
@@ -815,7 +818,6 @@
       "style": "sjoar_tatort",
       "type": "GEOJSON",
       "altitudeMode": "clampToGround",
-      "projection": "EPSG:3857",
       "attribution": "| SMHI",
       "attributes": [
         {
@@ -850,6 +852,29 @@
       "format": "image/png"
     },
     {
+      "name": "sprangningar",
+      "title": "Explosions, jan. 2023 - dec. 2025",
+      "group": "day8",
+      "source": "data/vald/sprangningar.geojson",
+      "style": "sprangningar",
+      "type": "GEOJSON",
+      "projection": "EPSG:4326",
+      "altitudeMode": "clampToGround",
+      "visible": false
+    },
+    {
+      "name": "skjutningar",
+      "title": "Deadly shootings, jan. 2018 — dec. 2025",
+      "group": "day8",
+      "source": "data/vald/skjutningar.geojson",
+      "style": "skjutningar",
+      "type": "GEOJSON",
+      "queryable": false,
+      "projection": "EPSG:4326",
+      "altitudeMode": "clampToGround",
+      "visible": false
+    },
+    {
       "name": "osm_buildings",
       "title": "OSM Buildings",
       "type": "THREEDTILE",
@@ -868,6 +893,28 @@
             [
               true,
               "color('#ffffff', 0.5)"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "name": "google_3d_tiles",
+      "title": "Google Photorealistic 3D Tiles",
+      "type": "THREEDTILE",
+      "abstract": "Photorealistic 3D Tiles from Google Maps Platform",
+      "url": 2275207,
+      "group": "miscellaneous",
+      "queryable": false,
+      "maximumScreenSpaceError": 16,
+      "visible": false,
+      "filter": "",
+      "style": {
+        "color": {
+          "conditions": [
+            [
+              true,
+              "color('#ffffff', 1)"
             ]
           ]
         }
@@ -1499,6 +1546,32 @@
         {
           "image": {
             "src": "img/png/orto.png"
+          }
+        }
+      ]
+    ],
+    "sprangningar": [
+      [
+        {
+          "icon": {
+            "src": "img/png/heart-flash.png",
+            "anchor": [
+              0.5,
+              1
+            ]
+          }
+        }
+      ]
+    ],
+    "skjutningar": [
+      [
+        {
+          "icon": {
+            "src": "img/png/heart.png",
+            "anchor": [
+              0.5,
+              1
+            ]
           }
         }
       ]

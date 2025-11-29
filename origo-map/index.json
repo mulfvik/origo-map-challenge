@@ -237,6 +237,20 @@
           "draggable": true,
           "opacityControl": true
         },
+         {
+          "name": "day9",
+          "title": "<strong>Day 9 - Analog</strong>",
+          "expanded": false,
+          "draggable": true,
+          "opacityControl": true,
+          "groups": [
+            {
+              "name": "norden_skiss",
+              "title": "<br><a href='img/norden_skiss_georef.jpg' target='_blank' rel='noopener noreferrer'><img src='img/norden_skiss_georef.jpg' alt='The nordics'></a>",
+              "expanded": true
+            }
+          ]
+        },
         {
           "name": "miscellaneous",
           "title": "<strong>Miscellaneous</strong>",

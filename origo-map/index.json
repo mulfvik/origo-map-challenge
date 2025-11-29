@@ -964,6 +964,29 @@
         "hue": 0.0,
         "gamma": 1.0
       }
+    },
+    {
+      "name": "osm_insane",
+      "title": "OpenStreetMap Insane",
+      "group": "background",
+      "queryable": false,
+      "style": "karta_osm_insane",
+      "type": "OSM",
+      "visible": false,
+      "css": {
+        "filter": "hue-rotate(0deg) saturate(300%) contrast(150%) brightness(1.2)",
+        "animation": "insane-spin 10s linear infinite, insane-pulse 3s ease-in-out infinite alternate"
+      },
+      "cesiumOptions": {
+        "alpha": 0.95,
+        "nightAlpha": 0.5,
+        "dayAlpha": 1.0,
+        "brightness": 1.5,
+        "contrast": 2.0,
+        "saturation": 3.0,
+        "hue": 0.0,
+        "gamma": 1.3
+      }
     }
   ],
   "styles": {
@@ -1542,6 +1565,15 @@
         {
           "image": {
             "src": "img/png/osm_dark.png"
+          }
+        }
+      ]
+    ],
+    "karta_osm_insane": [
+      [
+        {
+          "image": {
+            "src": "img/png/osm_insane.png"
           }
         }
       ]

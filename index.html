@@ -13,6 +13,56 @@
   <link href="origo-map/css/style.css" rel="stylesheet">
   <link href="origo-map/plugins/globe/globe.css" rel="stylesheet">
   <link rel="shortcut icon" href="./img/png/logo.png">
+  <style>
+    .o-map {
+      position: relative;
+    }
+    #noise-canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 9999;
+      animation: noise-pulse 8s ease-in-out infinite alternate;
+    }
+    @keyframes noise-pulse {
+      0% {
+        opacity: 0.0;
+      }
+      50% {
+        opacity: 0.5;
+      }
+      100% {
+        opacity: 1.0;
+      }
+    }
+    #vignette {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 9998;
+      animation: vignette-pulse 6s ease-in-out infinite alternate;
+    }
+    @keyframes vignette-pulse {
+      0% {
+        background: radial-gradient(ellipse at center, transparent 0%, transparent 30%, rgba(138, 43, 226, 0.3) 60%, rgba(75, 0, 130, 0.7) 80%, rgba(0, 0, 0, 0.9) 100%);
+      }
+      33% {
+        background: radial-gradient(ellipse at center, transparent 0%, transparent 30%, rgba(255, 0, 255, 0.3) 60%, rgba(138, 43, 226, 0.7) 80%, rgba(0, 0, 0, 0.9) 100%);
+      }
+      66% {
+        background: radial-gradient(ellipse at center, transparent 0%, transparent 30%, rgba(0, 255, 255, 0.3) 60%, rgba(0, 128, 255, 0.7) 80%, rgba(0, 0, 0, 0.9) 100%);
+      }
+      100% {
+        background: radial-gradient(ellipse at center, transparent 0%, transparent 30%, rgba(255, 0, 128, 0.3) 60%, rgba(138, 0, 226, 0.7) 80%, rgba(0, 0, 0, 0.9) 100%);
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -228,6 +278,116 @@
         cesiumIonassetIdTerrain: ''
       });
       viewer.addComponent(globe);
+
+      // Inject effects into map container
+      setTimeout(() => {
+        const mapElement = document.querySelector('.o-map');
+        if (mapElement) {
+          // Create and inject vignette
+          const vignette = document.createElement('div');
+          vignette.id = 'vignette';
+          vignette.style.display = 'none'; // Hidden by default
+          mapElement.appendChild(vignette);
+
+          // Create and inject canvas
+          const canvas = document.createElement('canvas');
+          canvas.id = 'noise-canvas';
+          canvas.style.display = 'none'; // Hidden by default
+          mapElement.appendChild(canvas);
+
+          // Initialize canvas
+          const ctx = canvas.getContext('2d');
+
+          function resize() {
+            const rect = mapElement.getBoundingClientRect();
+            canvas.width = rect.width;
+            canvas.height = rect.height;
+          }
+          resize();
+          window.onresize = resize;
+
+          function antswar(ctx) {
+            let w = ctx.canvas.width,
+              h = ctx.canvas.height,
+              idata = ctx.createImageData(w, h),
+              buffer32 = new Uint32Array(idata.data.buffer),
+              len = buffer32.length,
+              i = 0;
+            for (; i < len;)
+              buffer32[i++] = ((255 * Math.random()) | 0) << 24;
+
+            ctx.putImageData(idata, 0, 0);
+          }
+
+          let toggle = true;
+          let effectsActive = false;
+          let rotationAnimationId = null;
+          let startTime = null;
+
+          function checkInsaneLayer() {
+            const layer = viewer.getLayer('osm_insane');
+            const shouldBeActive = layer && layer.getVisible();
+            
+            if (shouldBeActive !== effectsActive) {
+              effectsActive = shouldBeActive;
+              vignette.style.display = effectsActive ? 'block' : 'none';
+              canvas.style.display = effectsActive ? 'block' : 'none';
+              if (effectsActive) {
+                resize(); // Resize canvas when activated
+                startMapRotation(); // Start map rotation
+              } else {
+                stopMapRotation(); // Stop map rotation
+              }
+            }
+          }
+
+          function startMapRotation() {
+            const map = viewer.getMap();
+            const view = map.getView();
+            startTime = performance.now();
+            
+            function rotateMap(currentTime) {
+              if (!effectsActive) return;
+              
+              const elapsed = currentTime - startTime;
+              const rotationSpeed = (2 * Math.PI) / 20000; // Full rotation in 20 seconds
+              const rotation = (elapsed * rotationSpeed) % (2 * Math.PI);
+              
+              view.setRotation(rotation);
+              rotationAnimationId = requestAnimationFrame(rotateMap);
+            }
+            
+            rotationAnimationId = requestAnimationFrame(rotateMap);
+          }
+
+          function stopMapRotation() {
+            if (rotationAnimationId) {
+              cancelAnimationFrame(rotationAnimationId);
+              rotationAnimationId = null;
+            }
+            // Reset rotation to 0
+            const map = viewer.getMap();
+            const view = map.getView();
+            view.setRotation(0);
+          }
+
+          // Check initially
+          checkInsaneLayer();
+
+          // Monitor layer visibility changes
+          setInterval(checkInsaneLayer, 200);
+
+          (function loop() {
+            toggle = !toggle;
+            if (toggle || !effectsActive) {
+              requestAnimationFrame(loop);
+              return;
+            }
+            antswar(ctx);
+            requestAnimationFrame(loop);
+          })();
+        }
+      }, 500);
     });
   </script>
 </body>

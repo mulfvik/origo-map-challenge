@@ -1097,6 +1097,25 @@
     transform: rotate(360deg);
   }
 }
+@keyframes insane-spin {
+  0% {
+    filter: hue-rotate(0deg) saturate(300%) contrast(150%) brightness(1.2);
+  }
+  100% {
+    filter: hue-rotate(360deg) saturate(300%) contrast(150%) brightness(1.2);
+  }
+}
+@keyframes insane-pulse {
+  0% {
+    filter: hue-rotate(0deg) saturate(200%) contrast(120%) brightness(1.0);
+  }
+  50% {
+    filter: hue-rotate(180deg) saturate(500%) contrast(200%) brightness(1.5);
+  }
+  100% {
+    filter: hue-rotate(360deg) saturate(200%) contrast(120%) brightness(1.0);
+  }
+}
 .o-ui .bg-primary {
   background-color: hsl(205, 100%, 48%);
 }

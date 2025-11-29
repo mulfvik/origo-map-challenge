@@ -24,7 +24,7 @@
     const origo = Origo('index.json', { baseUrl: 'origo-map/' });
     origo.on('load', (viewer) => {
       const globe = Globe({
-        showGlobe: false,
+        showGlobe: new URLSearchParams(window.location.search).get('showGlobe') ? false : true,
         globeOnStart: new URLSearchParams(window.location.search).get('globe') ? true : false,
         deactivateControls: [],
         settings: {

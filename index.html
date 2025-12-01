@@ -16,6 +16,7 @@
   <style>
     .o-map {
       position: relative;
+      overflow: hidden;
     }
     #noise-canvas {
       position: absolute;
@@ -24,7 +25,7 @@
       width: 100%;
       height: 100%;
       pointer-events: none;
-      z-index: 9999;
+      z-index: 10;
       animation: noise-pulse 8s ease-in-out infinite alternate;
     }
     @keyframes noise-pulse {
@@ -45,7 +46,7 @@
       width: 100%;
       height: 100%;
       pointer-events: none;
-      z-index: 9998;
+      z-index: 9;
       animation: vignette-pulse 6s ease-in-out infinite alternate;
     }
     @keyframes vignette-pulse {
@@ -109,168 +110,168 @@
             "url": "data/gltf/stjarnor/sun.gltf",
             "lat": 18.08321,
             "lng": 59.29361,
-            "height": 0, // Needs heightReference to be set to NONE
+            "height": 100, // Needs heightReference to be set to NONE
             "heightReference": "RELATIVE_TO_TERRAIN" //https://cesium.com/learn/ion-sdk/ref-doc/global.html?classFilter=heightReference#HeightReference
           },
           {
             "url": "data/gltf/planeter/mercurius.gltf",
             "lat": 18.0709375,
             "lng": 59.3196875,
-            "height": 0,
+            "height": 100,
             "heightReference": "RELATIVE_TO_TERRAIN"
           },
           {
             "url": "data/gltf/planeter/venus.gltf",
             "lat": 18.0584375,
             "lng": 59.3526875,
-            "height": 0,
+            "height": 100,
             "heightReference": "RELATIVE_TO_TERRAIN"
           },
           {
             "url": "data/gltf/planeter/earth.gltf",
             "lat": 18.0539375,
             "lng": 59.3689375,
-            "height": 0,
+            "height": 100,
             "heightReference": "RELATIVE_TO_TERRAIN"
           },
           {
             "url": "data/gltf/planeter/mars.gltf",
             "lat": 18.0365625,
             "lng": 59.3984375,
-            "height": 0,
+            "height": 100,
             "heightReference": "RELATIVE_TO_TERRAIN"
           },
           {
             "url": "data/gltf/planeter/jupiter.gltf",
             "lat": 17.9310431,
             "lng": 59.6489812,
-            "height": 0,
+            "height": 100,
             "heightReference": "RELATIVE_TO_TERRAIN"
           },
           {
             "url": "data/gltf/planeter/uranus.gltf",
             "lat": 17.8798983,
             "lng": 60.4069978,
-            "height": 0,
+            "height": 100,
             "heightReference": "RELATIVE_TO_TERRAIN"
           },
           {
             "url": "data/gltf/planeter/neptunus.gltf",
             "lat": 17.0628209,
             "lng": 61.3055762,
-            "height": 0,
+            "height": 100,
             "heightReference": "RELATIVE_TO_TERRAIN"
           },
           {
             "url": "data/gltf/astroid/astroid.gltf",
             "lat": 17.8011101,
             "lng": 59.7195239,
-            "height": 0,
+            "height": 100,
             "heightReference": "RELATIVE_TO_TERRAIN"
           },
           {
             "url": "data/gltf/astroid/astroid.gltf",
             "lat": 18.0455497,
             "lng": 59.3937924,
-            "height": 0,
+            "height": 100,
             "heightReference": "RELATIVE_TO_TERRAIN"
           },
           {
             "url": "data/gltf/astroid/astroid.gltf",
             "lat": 18.0726991,
             "lng": 59.309613,
-            "height": 0,
+            "height": 100,
             "heightReference": "RELATIVE_TO_TERRAIN"
           },
           {
             "url": "data/gltf/astroid/astroid.gltf",
             "lat": 12.7451792,
             "lng": 56.7347117,
-            "height": 0,
+            "height": 100,
             "heightReference": "RELATIVE_TO_TERRAIN"
           },
           {
             "url": "data/gltf/astroid/astroid.gltf",
             "lat": 18.304966,
             "lng": 59.2723633,
-            "height": 0,
+            "height": 100,
             "heightReference": "RELATIVE_TO_TERRAIN"
           },
           {
             "url": "data/gltf/astroid/astroid.gltf",
             "lat": 18.0637187,
             "lng": 59.4401263,
-            "height": 0,
+            "height": 100,
             "heightReference": "RELATIVE_TO_TERRAIN"
           },
           {
             "url": "data/gltf/dvargplaneter/pluto.gltf",
             "lat": 16.8234567,
             "lng": 61.8456789,
-            "height": 0,
+            "height": 100,
             "heightReference": "RELATIVE_TO_TERRAIN"
           },
           {
             "url": "data/gltf/dvargplaneter/eris.gltf",
             "lat": 16.5123456,
             "lng": 62.1234567,
-            "height": 0,
+            "height": 100,
             "heightReference": "RELATIVE_TO_TERRAIN"
           },
           {
             "url": "data/gltf/dvargplaneter/makemake.gltf",
             "lat": 16.7890123,
             "lng": 61.9876543,
-            "height": 0,
+            "height": 100,
             "heightReference": "RELATIVE_TO_TERRAIN"
           },
           {
             "url": "data/gltf/dvargplaneter/gonggong.gltf",
             "lat": 16.4567890,
             "lng": 62.3456789,
-            "height": 0,
+            "height": 100,
             "heightReference": "RELATIVE_TO_TERRAIN"
           },
           {
             "url": "data/gltf/dvargplaneter/humea.gltf",
             "lat": 16.6789012,
             "lng": 62.0123456,
-            "height": 0,
+            "height": 100,
             "heightReference": "RELATIVE_TO_TERRAIN"
           },
           {
             "url": "data/gltf/dvargplaneter/ixion.gltf",
             "lat": 16.3456789,
             "lng": 62.4567890,
-            "height": 0,
+            "height": 100,
             "heightReference": "RELATIVE_TO_TERRAIN"
           },
           {
             "url": "data/gltf/dvargplaneter/quaoar.gltf",
             "lat": 16.5678901,
             "lng": 62.2345678,
-            "height": 0,
+            "height": 100,
             "heightReference": "RELATIVE_TO_TERRAIN"
           },
           {
             "url": "data/gltf/dvargplaneter/sedna.gltf",
             "lat": 16.2345678,
             "lng": 62.5678901,
-            "height": 0,
+            "height": 100,
             "heightReference": "RELATIVE_TO_TERRAIN"
           },
           {
             "url": "data/gltf/dvargplaneter/varda.gltf",
             "lat": 16.4321098,
             "lng": 62.3210987,
-            "height": 0,
+            "height": 100,
             "heightReference": "RELATIVE_TO_TERRAIN"
           },
           {
             "url": "data/gltf/dvargplaneter/moon.gltf",
             "lat": 18.0589375,
             "lng": 59.3639375,
-            "height": 0,
+            "height": 100,
             "heightReference": "RELATIVE_TO_TERRAIN"
           }
         ],
